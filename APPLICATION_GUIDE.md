@@ -46,7 +46,7 @@ Go to: **[Anthropic Startup Program Application](https://claude.com/programs/sta
 | **Company / Project Name** | `LogiFlow AI` |
 | **Website URL** | `https://yourdomain.dev` |
 | **Work Email** | `contact@yourdomain.dev` *(Must match your domain)* |
-| **GitHub / Repository URL** | `https://github.com/<your-username>/logiflow-engine` |
+| **GitHub / Repository URL** | `https://github.com/ShravanGK1/claude-code` |
 | **What does your company / project do?** | `LogiFlow AI is an open-source logistics intelligence and settlement automation platform that reconciles complex multi-party freight invoices and dispatches against contracted rate cards in real time.` |
 | **How are you using or planning to use Claude / LLMs?** | `We integrate Claude 3.5 Sonnet's vision and structured reasoning capabilities to autonomously extract unstructured bill-of-lading (BOL) data, detect billing discrepancies against contracted MSAs, and power high-throughput settlement audit pipelines.` |
 | **Primary LLM Provider / Model** | `Anthropic Claude (Claude 3.5 Sonnet / Haiku)` |
