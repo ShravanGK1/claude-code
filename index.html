@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiFlow AI — Autonomous Logistics & Payout Intelligence Engine</title>
+    <meta name="description" content="Open-source AI-powered reconciliation, logistics dispatch automation, and automated payout engine powered by Claude 3.5 Sonnet.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Elements -->
+    <div class="glow-orb glow-top"></div>
+    <div class="glow-orb glow-bottom"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">LogiFlow<span class="gradient-text">.ai</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#api">API</a>
+                <a href="#docs">Docs</a>
+            </div>
+            <div class="nav-actions">
+                <a href="https://github.com" target="_blank" class="btn btn-outline">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub (v1.4.0)
+                </a>
+                <a href="#quickstart" class="btn btn-primary">Get API Key</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container hero-content">
+            <div class="badge-pill">
+                <span class="badge-dot"></span> Powered by Claude 3.5 Sonnet Engine
+            </div>
+            <h1 class="hero-title">Autonomous Logistics & <br><span class="gradient-text">Settlement Intelligence</span></h1>
+            <p class="hero-subtitle">
+                An open-source developer framework combining high-throughput payout reconciliation, dynamic dispatch routing, and multi-agent document reasoning into a unified cloud API.
+            </p>
+            <div class="hero-cta-group">
+                <a href="#quickstart" class="btn btn-glow">Deploy Open-Source Node</a>
+                <a href="#api" class="btn btn-secondary">Interactive API Sandbox</a>
+            </div>
+            
+            <!-- Terminal Preview -->
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">payout_reconciliation_agent.py</span>
+                    <button class="copy-btn" id="copy-btn">Copy</button>
+                </div>
+                <div class="code-body">
+<pre><code><span class="kw">from</span> logiflow <span class="kw">import</span> PayoutEngine, ClaudeReasoner
+
+<span class="comment"># Initialize AI-augmented Settlement Engine</span>
+engine = PayoutEngine(model=<span class="str">"claude-3-5-sonnet"</span>, auto_audit=<span class="kw">True</span>)
+
+<span class="comment"># Autonomous invoice extraction, reconciliation & settlement</span>
+result = engine.reconcile_dispatch(
+    bill_of_lading=<span class="str">"bol_88923.pdf"</span>,
+    freight_rate_card=<span class="str">"contract_tier1.json"</span>,
+    tolerance_threshold=<span class="num">0.005</span>
+)
+
+<span class="kw">print</span>(f<span class="str">"Status: {result.status} | Audit Score: {result.confidence}%"</span>)
+<span class="comment"># &gt;&gt;&gt; Status: APPROVED | Audit Score: 99.8% | Instant Payout Dispatched</span></code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Metrics Bar -->
+    <section class="metrics-section">
+        <div class="container metrics-grid">
+            <div class="metric-card">
+                <h3>99.98%</h3>
+                <p>Extraction Accuracy</p>
+            </div>
+            <div class="metric-card">
+                <h3>&lt; 320ms</h3>
+                <p>Sub-second Audit Latency</p>
+            </div>
+            <div class="metric-card">
+                <h3>100%</h3>
+                <p>Open Source & Self-Hostable</p>
+            </div>
+            <div class="metric-card">
+                <h3>$4.2M+</h3>
+                <p>Reconciled Monthly</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Grid -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="sub-badge">Engine Capabilities</span>
+                <h2>Built for high-scale enterprise supply chains</h2>
+                <p>Automate tedious document processing, multi-party payout settlements, and compliance verification.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📑</div>
+                    <h3>Multi-Modal Document Parsing</h3>
+                    <p>Extracts complex line items, fuel surcharges, and detention clauses directly from messy PDF invoices and scans.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Automated Payout Engine</h3>
+                    <p>Real-time mathematical validation against master service agreements (MSAs) with automatic bank rail triggers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Discrepancy Resolution Agent</h3>
+                    <p>Flags overcharges, duplicate billings, and unauthorized accessorial fees using Claude 3.5 reasoning chains.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Dispatch Optimization</h3>
+                    <p>Dynamically assigns carrier loads based on historical driver SLA, real-time rates, and predictive delivery metrics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Zero-Retention Privacy</h3>
+                    <p>Enterprise grade security with localized embeddings, private VPC deployment options, and SOC2 compliance paths.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Webhooks & Event Stream</h3>
+                    <p>Receive real-time settlement events and telemetry straight into your ERP (SAP, Oracle, NetSuite) or PostgreSQL database.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live API Demo Section -->
+    <section id="api" class="api-demo-section">
+        <div class="container">
+            <div class="demo-wrapper">
+                <div class="demo-info">
+                    <span class="sub-badge">Developer Sandbox</span>
+                    <h2>Test the Payout Verification API</h2>
+                    <p>Simulate a live carrier dispatch invoice audit. Our Claude-powered engine inspects rate variances, validates line items, and calculates net settlement balance in milliseconds.</p>
+                    
+                    <div class="demo-controls">
+                        <label for="scenario-select">Select Dispatch Scenario:</label>
+                        <select id="scenario-select">
+                            <option value="standard">Clean Long-Haul Invoice ($3,450.00)</option>
+                            <option value="discrepancy">Fuel Surcharge Variance Detected ($4,120.00)</option>
+                            <option value="detention">Excess Detention Dispute ($2,890.00)</option>
+                        </select>
+                        <button id="run-audit-btn" class="btn btn-primary">Run Autonomous Audit</button>
+                    </div>
+                </div>
+
+                <div class="demo-console">
+                    <div class="console-header">
+                        <span class="status-indicator"></span> Live API Response
+                    </div>
+                    <pre id="audit-output" class="console-output"><code>{
+  "status": "ready",
+  "message": "Click 'Run Autonomous Audit' to test Claude 3.5 Sonnet engine reasoning..."
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture-section">
+        <div class="container text-center">
+            <span class="sub-badge">System Topology</span>
+            <h2>How LogiFlow Connects with Claude API</h2>
+            <div class="arch-flow">
+                <div class="arch-box">
+                    <h4>Inbound Invoices</h4>
+                    <span>PDF / EDI / OCR</span>
+                </div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-box highlight">
+                    <h4>Claude 3.5 Sonnet</h4>
+                    <span>Vision & Structured Logic</span>
+                </div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-box">
+                    <h4>LogiFlow Engine</h4>
+                    <span>Rule Match & Auditing</span>
+                </div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-box">
+                    <h4>Instant Settlement</h4>
+                    <span>Stripe / ACH / ERP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="logo-text">LogiFlow<span class="gradient-text">.ai</span></span>
+                <p>Open Source Autonomous Logistics & Settlement Intelligence Framework.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h5>Resources</h5>
+                    <a href="#">Documentation</a>
+                    <a href="#">GitHub Repo</a>
+                    <a href="#">API Reference</a>
+                </div>
+                <div>
+                    <h5>Company</h5>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div>
+                    <h5>Legal</h5>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">MIT License</a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>© 2026 LogiFlow AI Open Source Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
